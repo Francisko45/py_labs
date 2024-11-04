@@ -1,0 +1,6 @@
+input1 = input()
+input2 = input()
+set1 = set(map(int, input1.split(', ')))
+set2 = set(map(int, input2.split(', ')))
+elements = sorted(set1 & set2)
+print(" ".join(map(str, elements)))

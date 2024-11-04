@@ -18,17 +18,17 @@ def binaryf(fraction, precision=10):
     return result
 
 def tobinary(number):
-    integer_part = int(number)
-    fractional_part = number - integer_part
+    integerpart = int(number)
+    fractional_part = number - integerpart
     
-    binary_integer = binaryi(integer_part)
-    binary_fraction = binaryf(fractional_part)
+    binaryinteger = binaryi(integerpart)
+    binaryfraction = binaryf(fractional_part)
     
-    if binary_fraction:
-        return f"{binary_integer}.{binary_fraction}"
+    if binaryfraction:
+        return f"{binaryinteger}.{binaryfraction}"
     else:
-        return binary_integer
+        return binaryinteger
 
 number = float(input("Введіть десяткове число: "))
-binary_representation = tobinary(number)
-print(f"Двійковий код: {binary_representation}")
+res = tobinary(number)
+print(f"Двійковий код: {res}")

@@ -3,11 +3,9 @@ class LowerUp:
         self.text = ""
 
     def get_input(self):
-        """Отримує рядок з вводу консолі"""
         self.text = input("Введіть рядок: ")
 
     def print(self):
-        """Друкує рядок у верхньому регістрі"""
         print(self.text.upper())
 
 lower_up = LowerUp()
